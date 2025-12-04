@@ -1,4 +1,4 @@
-import back from "../../assets/icont/back.svg";
+// import back from "../../assets/icont/back.svg";
 import informasi from "../../assets/icont/informasi.svg";
 import tas from "../../assets/gambar_tas/Tas1.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -20,13 +20,12 @@ const ListRiwayat = () => {
     <div className="px-10 flex flex-col md:items-center  w-full">
       <div className="px-4 py-1 flex flex-col gap-4 md:w-150">
         <div className="flex flex-col pb-3 border bg-[#fbf7f7] rounded max-h-150 min-h-100 ">
-     
           <div className="flex gap-2 items-center bg-[#2E4365] rounded-t px-1 text-white py-2">
             <button
               onClick={() => navigasi("/shooping")}
               className="cursor-pointer"
             >
-              <img src={back} alt="" className="w-5" />
+              {/* <img src={back} alt="" className="w-5" /> */}
             </button>
             <h1 className="font-extralight text-[1rem]">Rincian Orderan</h1>
           </div>
@@ -45,7 +44,6 @@ const ListRiwayat = () => {
             </div>
           </div>
 
-      
           <div className="max-h-100 min-h-90 overflow-y-scroll scroll-smooth duration-500 transition-all ease-linear">
             {myOrder.length === 0 && (
               <p className="text-center text-[#cdcdcd]">Belum ada orderan</p>
