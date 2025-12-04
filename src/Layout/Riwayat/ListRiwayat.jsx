@@ -1,4 +1,4 @@
-// import back from "../../assets/icont/back.svg";
+import kembali from "../../assets/kembali.svg";
 import informasi from "../../assets/icont/informasi.svg";
 import tas from "../../assets/gambar_tas/Tas1.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -23,9 +23,9 @@ const ListRiwayat = () => {
           <div className="flex gap-2 items-center bg-[#2E4365] rounded-t px-1 text-white py-2">
             <button
               onClick={() => navigasi("/shooping")}
-              className="cursor-pointer"
+              className="cursor-pointer ml-2"
             >
-              {/* <img src={back} alt="" className="w-5" /> */}
+              <img src={kembali} alt="" className="w-5" />
             </button>
             <h1 className="font-extralight text-[1rem]">Rincian Orderan</h1>
           </div>

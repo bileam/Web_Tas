@@ -1,4 +1,4 @@
-// import kembali from "../../assets/kembali.svg";
+import kembali from "../../assets/kembali.svg";
 import alamat from "../../assets/icont/alamat.svg";
 import express from "../../assets/icont/express.svg";
 import detail from "../../assets/icont/detail.svg";
@@ -21,9 +21,12 @@ const RiwayatDetail = () => {
       <div className="px-4 py-1 flex flex-col gap-4 md:w-150">
         <div className="flex flex-col pb-3 border bg-[#fbf7f7] rounded max-h-150 min-h-100 ">
           <div className="flex gap-2 items-center bg-[#2E4365] rounded-t px-1 text-white py-2">
-            {/* <button onClick={() => navigasi(-1)} className="cursor-pointer">
-              <img src={kembali} alt="" className="w-5" />
-            </button> */}
+            <button
+              onClick={() => navigasi(-1)}
+              className="cursor-pointer  ml-2"
+            >
+              <img src={kembali} alt="" className="w-5 " />
+            </button>
             <h1 className="font-extralight text-[1rem]">Rincian Pengiriman</h1>
           </div>
           <div className="flex flex-col  px-2 py-2">

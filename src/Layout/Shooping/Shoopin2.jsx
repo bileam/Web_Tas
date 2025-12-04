@@ -107,7 +107,7 @@ const Shooping2 = () => {
             <input
               type="text"
               id="simple-search"
-              class="px-3 py-1.5 w-90   border  border-default-medium rounded-md ps-5 text-heading text-sm focus:ring-brand focus:border-brand   placeholder:text-body"
+              class="px-3 py-1.5 md:w-90 w-36    border  border-default-medium rounded-md  text-heading text-sm focus:ring-brand focus:border-brand   placeholder:text-body"
               placeholder="Cari Produk"
               required
               value={search}
@@ -125,16 +125,16 @@ const Shooping2 = () => {
                     className="object-cover max-w-30 md:max-h-30"
                   />
                   <div className=" flex items-end justify-center  bg-black/30 text-white absolute inset-0    group-hover:opacity-100  duration-500 ease-in-out md:opacity-0 ">
-                    <div className="flex text-white font-semibold md:group-hover:-translate-y-6 -translate-y-2 -translate-x-20 md:translate-x-0 md:translate-y-0  duration-500 ease-in-out  bg-[#00537A] rounded-lg">
+                    <div className="flex text-white font-semibold md:group-hover:-translate-y-6 -translate-y-2 -translate-x-15 md:translate-x-0 md:translate-y-0  duration-500 ease-in-out  bg-[#00537A] rounded-lg">
                       <button
                         onClick={() => handleCert(produk)}
-                        className="cursor-pointer px-3 hover:bg-[#F5A201] rounded-l-md transition duration-500 ease-in"
+                        className="cursor-pointer px-3 hover:bg-[#F5A201] active:bg-[#F5A201]  rounded-l-md transition duration-500 ease-in"
                       >
                         <img src={logocart} alt="" />
                       </button>
                       <button
                         onClick={() => handleBelanja(produk)}
-                        className="cursor-pointer px-2 py-2  border-l-2 hover:bg-[#F5A201] rounded-r-md transition duration-500 ease-in "
+                        className="cursor-pointer px-2 py-2  border-l-2 hover:bg-[#F5A201] active:bg-[#F5A201] rounded-r-md transition duration-500 ease-in "
                       >
                         Beli Sekarang
                       </button>
