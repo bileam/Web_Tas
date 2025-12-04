@@ -1,9 +1,8 @@
-import back from "../../assets/icont/back.svg";
+import back from "../../assets/back.svg";
 import alamat from "../../assets/icont/alamat.svg";
 import express from "../../assets/icont/express.svg";
 import detail from "../../assets/icont/detail.svg";
 import informasi from "../../assets/icont/informasi.svg";
-import tas from "../../assets/gambar_tas/Tas1.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import { MyOrderContext } from "../Context/MyOrder";
 import { useContext } from "react";
@@ -22,10 +21,7 @@ const RiwayatDetail = () => {
       <div className="px-4 py-1 flex flex-col gap-4 md:w-150">
         <div className="flex flex-col pb-3 border bg-[#fbf7f7] rounded max-h-150 min-h-100 ">
           <div className="flex gap-2 items-center bg-[#2E4365] rounded-t px-1 text-white py-2">
-            <button
-              onClick={() => navigasi(-1)}
-              className="cursor-pointer"
-            >
+            <button onClick={() => navigasi(-1)} className="cursor-pointer">
               <img src={back} alt="" className="w-5" />
             </button>
             <h1 className="font-extralight text-[1rem]">Rincian Pengiriman</h1>
