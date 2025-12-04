@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "nama_tas": "Laptop Bag",
+    "jenis_tas": "tas tangan",
+    "qty": 1,
+    "berat": "4kg",
+    "warna": "merah",
+    "kapasitas": "25 liter",
+    "price": 500000,
+    "gambar": "tasLaptop",
+    "desc": "tas ransel cewek Koleksi Tas Wanita",
+    "KategoriTas": 6
+  },
+  {
+    "id": 2,
+    "nama_tas": "women's bags",
+    "jenis_tas": "tas tangan",
+    "qty": 1,
+    "berat": "4kg",
+    "warna": "merah",
+    "kapasitas": "25 liter",
+    "price": 500000,
+    "gambar": "tas1",
+    "desc": "tas ransel cewek Koleksi Tas Wanita",
+    "KategoriTas": 1
+  },
+  {
+    "id": 3,
+    "nama_tas": "children's bags",
+    "jenis_tas": "tas tangan",
+    "qty": 1,
+    "berat": "4kg",
+    "warna": "merah",
+    "kapasitas": "25 liter",
+    "price": 500000,
+    "gambar": "TasAnak",
+    "desc": "tas ransel cewek Koleksi Tas Wanita",
+    "KategoriTas": 3
+  },
+  {
+    "id": 4,
+    "nama_tas": "men's bags",
+    "jenis_tas": "tas tangan",
+    "qty": 1,
+    "berat": "4kg",
+    "warna": "merah",
+    "kapasitas": "25 liter",
+    "price": 100000,
+    "gambar": "TasPria",
+    "desc": "tas keren terpercaya",
+    "KategoriTas": 2
+  },
+
+  {
+    "id": 5,
+    "nama_tas": "travel bag",
+    "jenis_tas": "tas tangan",
+    "qty": 1,
+    "berat": "4kg",
+    "warna": "merah",
+    "kapasitas": "25 liter",
+    "price": 500000,
+    "gambar": "TasTravel",
+    "desc": "tas ransel cewek Koleksi Tas Wanita",
+    "KategoriTas": 4
+  },
+  {
+    "id": 6,
+    "nama_tas": "children's bags",
+    "jenis_tas": "tas tangan",
+    "qty": 1,
+    "berat": "4kg",
+    "warna": "merah",
+    "kapasitas": "25 liter",
+    "price": 500000,
+    "gambar": "TasAnak",
+    "desc": "tas ransel cewek Koleksi Tas Wanita",
+    "KategoriTas": 3
+  },
+  {
+    "id": 7,
+    "nama_tas": "School Bag",
+    "jenis_tas": "tas tangan",
+    "qty": 1,
+    "berat": "4kg",
+    "warna": "merah",
+    "kapasitas": "25 liter",
+    "price": 500000,
+    "gambar": "tasSekolah",
+    "desc": "tas ransel cewek Koleksi Tas Wanita",
+    "KategoriTas": 5
+  },
+  {
+    "id": 8,
+    "nama_tas": "Laptop Bag",
+    "jenis_tas": "tas tangan",
+    "qty": 1,
+    "berat": "4kg",
+    "warna": "merah",
+    "kapasitas": "25 liter",
+    "price": 500000,
+    "gambar": "tasLaptop",
+    "desc": "tas ransel cewek Koleksi Tas Wanita",
+    "KategoriTas": 6
+  }
+]

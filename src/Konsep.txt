@@ -1,0 +1,148 @@
+sorting
+// if (search.trim() === "") {
+    //   setDataSelect(hasil);
+    //   return;
+    // }
+    // const lowerSearch = search.toLowerCase();
+
+    // // 3Cari data yang cocok dengan search
+    // const cocok = hasil.filter(
+    //   (item) =>
+    //     item.nama_tas.toLowerCase().includes(lowerSearch) ||
+    //     // item.jenis_tas?.toLowerCase().includes(lowerSearch) ||
+    //     item.namakategori?.toLowerCase().includes(lowerSearch)
+    // );
+
+    // // 4️Data yang tidak cocok (tetap ditampilkan di bawah)
+    // const tidakCocok = hasil.filter(
+    //   (item) =>
+    //     !item.nama_tas.toLowerCase().includes(lowerSearch) &&
+    //     // !item.jenis_tas?.toLowerCase().includes(lowerSearch) &&
+    //     !item.namakategori?.toLowerCase().includes(lowerSearch)
+    // );
+
+    // // gabungkan → yang cocok paling atas
+    // const finalData = [...cocok, ...tidakCocok];
+
+    // setDataSelect(finalData);
+
+
+
+yang belum dibuat
+cart: chekOut New = belum tau navigasi kemana
+Cart:continue => navigasi ke Shooping 
+about belum shooping belum
+contak belum
+
+
+alur Costumer:
+ costumer -> BeliProduk ->data diri(nama,alamat,kodePos,nomorWa) ->  
+              detailPesanan->struk () -> finish  
+costumer -> keranjang -> cekOut -> datadiri -> detailPesanan ->struk -finish
+
+
+
+nnti yang di buat:
+page datadiri 
+desain cekOut
+struk 
+
+
+admin: 
+- apload produk (nama produk,dll)
+- hapus produk 
+- update produk
+- lihat produk produk
+
+
+
+// =============================================
+// 🔥 MENAMPILKAN SEMUA PRODUK DENGAN NAMA KATEGORINYA
+// =============================================
+export const getAllProductsWithCategory = (products, categories) => {
+  return products.map(product => {
+    const category = categories.find(c => c.id === product.categoryId);
+    return {
+      ...product,
+      categoryName: category ? category.name : "Kategori Tidak Ditemukan",
+    };
+  });
+};
+
+// =============================================
+// 🔥 MENAMPILKAN PRODUK BERDASARKAN ID KATEGORI
+// =============================================
+export const getProductsByCategory = (products, categoryId) => {
+  return products.filter(product => product.categoryId === categoryId);
+};
+
+// =============================================
+// 🔥 MENDAPATKAN NAMA KATEGORI DARI PRODUCT
+// =============================================
+export const getCategoryName = (product, categories) => {
+  const category = categories.find(c => c.id === product.categoryId);
+  return category ? category.name : "Kategori Tidak Ditemukan";
+};
+
+// =============================================
+// 🔥 MENDAPATKAN PRODUK + KATEGORI BY PRODUCT ID
+// =============================================
+export const getProductDetailWithCategory = (productId, products, categories) => {
+  const product = products.find(p => p.id === productId);
+  if (!product) return null;
+
+  const category = categories.find(c => c.id === product.categoryId);
+
+  return {
+    ...product,
+    categoryName: category ? category.name : "Kategori Tidak Ditemukan",
+  };
+};
+
+
+
+untuk gambar:
+{
+  id: 1,
+  name: "Tas Kulit Premium",
+  price: 350000,
+  categoryId: 1,
+  image: "url-atau-base64" // baru
+}
+
+
+fileform
+const [image, setImage] = useState(null);
+
+<input
+  type="file"
+  accept="image/*"
+  onChange={(e) => {
+    const file = e.target.files[0];
+    if (file) {
+      // Bisa disimpan sebagai URL lokal sementara
+      setImage(URL.createObjectURL(file));
+    }
+  }}
+/>
+
+ addProduk({
+    name,
+    price: Number(price),
+    categoryId: Number(categoryId),
+    image, // simpan URL atau base64
+  });
+
+
+menampilkan gambar
+getAllProduk.map((item) => (
+  <div key={item.id}>
+    <h1>Nama: {item.name}</h1>
+    <h1>Harga: {item.price}</h1>
+    <h1>Kategori: {item.NamaKategory}</h1>
+    {item.image && <img src={item.image} alt={item.name} className="w-32 h-32 object-cover" />}
+  </div>
+))}
+
+beli sekarang -> detail beli(menambahkan qty) -> masuk menu cekOut(tidak menambahkan qty)
+keranjang(qty) -> cekOut(tidak menambahkan qty)

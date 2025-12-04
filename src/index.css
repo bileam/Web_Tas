@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@layer utilities {
+  .font-Roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  .font-Rubik {
+    font-family: "Rubik";
+  }
+  .font-Momo {
+    font-family: "Momo Signature";
+  }
+}
