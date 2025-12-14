@@ -3,16 +3,23 @@ import Carousel from "../../Components/components/Carousel.jsx";
 import gambar1 from "../../assets/Bg_gambar/TasKita1.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const RvHome1 = () => {
   const navigasi = useNavigate();
-
+  const [putar, setputar] = useState(false);
   useEffect(() => {
     AOS.init({
       duration: 500,
       once: true,
     });
+    const timer = setTimeout(() => {
+      console.log("Timeout 2 detik");
+      setputar(true);
+    }, 2000);
+
+    // Cleanup agar tidak memory leak
+    return () => clearTimeout(timer);
   }, []);
   return (
     <div className="flex min-h-screen ">
@@ -34,15 +41,20 @@ const RvHome1 = () => {
         <div className="absolute inset-0 bg-black/50"></div>
 
         {/* Konten */}
-        <div className="relative z-10 text-white w-full      h-full flex flex-col  items-center justify-center ">
+        <div className="relative z-10 text-white w-full   h-full flex flex-col  items-center justify-center ">
           <div className="flex flex-col justify-start   ">
             <h1 className="font-extrabold text-[1.5rem] ">
               Lengkapi Gayamu Bersama{" "}
-              <span className="text-[2rem] font-black text-[#fec917]">
-                AURA & CO.
+              <span
+                className={`text-[2rem] font-black text-[#fec917] inline-block transform 
+              
+                // putar ? "rotate-180" : ""
+                 
+                transition-transform duration-500`}
+              >
+                AURA & CO
               </span>
             </h1>
-
             <h1 className="text-white text-[1rem] ">
               SERIES BEAUTY & CLASS BAG
             </h1>

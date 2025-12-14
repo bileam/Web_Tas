@@ -37,7 +37,7 @@ const RvHome2 = () => {
               <div
                 // data-aos="zoom-in-up"
                 key={index}
-                className=" group   bg-[#F5A201] relative   items-center rounded justify-center w-50  sm:w-60   group-hover:bg-black/20 flex flex-col"
+                className=" group   bg-[#F5A201] relative   items-center rounded justify-center w-85   md:w-60   group-hover:bg-black/20 flex flex-col"
               >
                 <div className="md:group-hover:bg-black/70 bg-black/70 md:bg-[#F5A201]  w-full  flex justify-center p-2 transition duration-500 ease-in-out rounded">
                   <img

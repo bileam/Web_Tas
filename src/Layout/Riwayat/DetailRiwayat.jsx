@@ -17,9 +17,9 @@ const RiwayatDetail = () => {
   console.log(data);
 
   return (
-    <div className="px-10 flex flex-col md:items-center w-full">
-      <div className="px-4 py-1 flex flex-col gap-4 md:w-150">
-        <div className="flex flex-col pb-3 border bg-[#fbf7f7] rounded max-h-150 min-h-100 ">
+    <div className="md:px-10 flex flex-col min-h-screen md:items-center w-full">
+      <div className="md:px-4 py-1 flex flex-col gap-4 md:w-150">
+        <div className="flex flex-col pb-3 min-h-screen bg-[#fbf7f7] rounded md:max-h-150 md:min-h-100 ">
           <div className="flex gap-2 items-center bg-[#2E4365] rounded-t px-1 text-white py-2">
             <button
               onClick={() => navigasi(-1)}
